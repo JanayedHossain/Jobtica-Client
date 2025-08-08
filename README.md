@@ -1,3 +1,7 @@
+
+![Jobtica Screenshot](https://i.ibb.co/ZRs8j7t8/Screenshot-253.png)
+
+---
 # Jobtica - Employee Management System
 
 **Live Site URL:** [https://jobtica.netlify.app](https://jobtica.netlify.app)  
@@ -43,3 +47,26 @@
 - 🛡️ Secure Middleware for role checking (Firebase token + Role verification)
 
 ---
+
+---
+
+## 🛠️ Run Locally
+
+Follow these steps to set up the project on your local machine:
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/JanayedHossain/Jobtica-Client.git
+
+# 2️⃣ Navigate to the project folder
+cd jobtica
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Create a .env file in the root directory and add your environment variables
+VITE_API_KEY=your_api_key
+VITE_API_URL=your_api_url
+
+# 5️⃣ Start the development server
+npm run dev
