@@ -18,9 +18,6 @@ const Newsletter = () => {
   return (
     <div
       className="bg-primary max-w-[95%] mx-auto text-white py-12 px-4 my-16 rounded-2xl"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.2 }}
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">

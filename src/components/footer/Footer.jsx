@@ -52,6 +52,12 @@ const Footer = () => {
                 Home
               </NavLink>
             </li>
+
+            <li>
+              <NavLink to="/all-features" className="hover:underline">
+                All Features
+              </NavLink>
+            </li>
             {user && (
               <li>
                 <NavLink to="/dashboard" className="hover:underline">
@@ -59,11 +65,6 @@ const Footer = () => {
                 </NavLink>
               </li>
             )}
-            <li>
-              <NavLink to="/all-features" className="hover:underline">
-                All Features
-              </NavLink>
-            </li>
             <li>
               <NavLink to="/contact-us" className="hover:underline">
                 Contact

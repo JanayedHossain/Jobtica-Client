@@ -71,7 +71,7 @@ const PayModal = ({ employee, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="bg-white w-[90%] sm:w-[80%] md:w-[70%] lg:w-[50%] rounded-xl border border-primary p-6 shadow-xl"
+        className="text-black w-[90%] sm:w-[80%] md:w-[70%] lg:w-[50%] rounded-xl border border-primary p-6 shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl md:text-2xl font-semibold mb-5">

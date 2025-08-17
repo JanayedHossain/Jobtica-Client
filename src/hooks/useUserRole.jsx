@@ -5,8 +5,9 @@ import useAxiousSecure from "./useAxiousSecure";
 const useUserRole = () => {
   const { user, loading: authLoading } = useAuth();
   const axiosSecure = useAxiousSecure();
+
   const {
-    data: role = "user",
+    data = {},
     isLoading: roleLoading,
     refetch,
   } = useQuery({
@@ -14,11 +15,16 @@ const useUserRole = () => {
     enabled: !authLoading && !!user?.email,
     queryFn: async () => {
       const res = await axiosSecure.get(`/user-role?email=${user?.email}`);
-      return res.data.role;
+      return res.data; // পুরো data
     },
   });
 
-  return { role, roleLoading: authLoading || roleLoading, refetch };
+  return {
+    role: data.role || "user", // role আলাদা
+    details: data, // পুরো res.data
+    roleLoading: authLoading || roleLoading,
+    refetch,
+  };
 };
 
 export default useUserRole;

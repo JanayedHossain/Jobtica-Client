@@ -20,6 +20,8 @@ import NotFound from "../pages/notfound/NotFound";
 import ContactUs from "../pages/contact/ContactUs";
 import Messages from "../pages/dashboard/adminDashboard/Messages";
 import AllFeatures from "../pages/all-features/AllFeatures";
+import Profile from "../pages/dashboard/profile/Profile";
+import AboutUs from "../pages/about-us/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +46,10 @@ export const router = createBrowserRouter([
         Component: ContactUs,
       },
       {
+        path: "about-us",
+        Component: AboutUs,
+      },
+      {
         path: "all-features",
         Component:AllFeatures,
       },
@@ -61,6 +67,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: DashboardHome,
+      },
+      {
+        path:'profile',
+        Component: Profile,
       },
       {
         path: "work-sheet",
