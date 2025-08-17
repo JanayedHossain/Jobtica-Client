@@ -71,7 +71,7 @@ const Faq = () => {
                 </svg>
               </button>
               {openIndex === idx && (
-                <div className="px-6 pb-4 text-gray-700">{faq.answer}</div>
+                <div className="px-6 pb-4 text-gray-500">{faq.answer}</div>
               )}
             </div>
           ))}

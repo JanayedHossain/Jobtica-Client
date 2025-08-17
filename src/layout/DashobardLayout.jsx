@@ -5,6 +5,7 @@ import useUserRole from "../hooks/useUserRole";
 import useAuth from "../hooks/useAuth";
 import { toast } from "react-toastify";
 import Loading from "../components/loading/Loading";
+import Toggle from "../components/toggle/Toggle";
 const DashboardLayout = () => {
   const { role } = useUserRole();
   const { user, logOutUser, loading } = useAuth();
@@ -90,12 +91,12 @@ const DashboardLayout = () => {
           className="drawer-toggle"
         />
         <div className="drawer-content flex flex-col">
-          <div className="w-full navbar bg-base-200 px-4">
+          <div className="w-full navbar bg-white px-4">
             <label
               htmlFor="dashboard-drawer"
-              className="btn btn-ghost lg:hidden"
+              className="btn btn-ghost lg:hidden group"
             >
-              <FiMenu className="text-xl" />
+              <FiMenu className="text-xl text-black group-hover:text-secondary" />
             </label>
             <Link to="/" className="text-xl">
               <img src={logo} alt="" className="w-24" />
@@ -107,7 +108,7 @@ const DashboardLayout = () => {
         </div>
         <div className="drawer-side z-40">
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-64 min-h-full bg-base-200 text-base-content">
+          <ul className="menu p-4 w-64 min-h-full bg-white text-black ">
             <Link to="/">
               <img src={logo} alt="" className="w-24 pb-6" />
             </Link>
@@ -135,7 +136,7 @@ const DashboardLayout = () => {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-64 bg-base-200 flex-col p-4">
+      <div className="hidden lg:flex w-64 bg-white text-black flex-col p-4">
         <Link to="/" className="text-xl">
           <img src={logo} alt="" className="w-32 pb-6" />
         </Link>
@@ -162,6 +163,7 @@ const DashboardLayout = () => {
       <div className="flex-1 hidden lg:block p-6">
         <Outlet />
       </div>
+      <Toggle />
     </aside>
   );
 };

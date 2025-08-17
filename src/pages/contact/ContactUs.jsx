@@ -30,7 +30,7 @@ const ContactUs = () => {
     return <Loading />;
   }
   return (
-    <div className="max-w-2xl mx-auto p-6 pb-14">
+    <div className="max-w-2xl mx-auto p-6 pb-14 mt-24">
       <h2 className="text-3xl font-semibold mb-4 text-center">
         Contact <span className="text-primary">Us</span>
       </h2>
@@ -41,7 +41,7 @@ const ContactUs = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-4 bg-white p-6 rounded-2xl shadow"
+        className="space-y-4 p-6 rounded-2xl shadow"
       >
         <div>
           <label className="block mb-1 font-medium">Your Email</label>

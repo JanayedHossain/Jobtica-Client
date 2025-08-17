@@ -32,7 +32,7 @@ const CompanyMilestones = () => {
         {milestones.map((item, idx) => (
           <div
             key={idx}
-            className="flex items-center gap-2 font-semibold text-gray-700 mx-10"
+            className="flex items-center gap-2 font-semibold text-secondary mx-10"
           >
             {item.icon}
             {item.text}

@@ -4,7 +4,7 @@ const CompanyBanner = () => {
     <div className="bg-gray-200 py-16 lg:py-24">
       <div className="w-[95%] mx-auto grid lg:grid-cols-2 gap-8 items-center">
         <div className="order-2 lg:order-1">
-          <h1 className="text-4xl md:text-5xl font-primaryFont font-bold mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-primaryFont font-bold mb-4 leading-tight  text-black">
             Empowering Teams,{" "}
             <span className="text-primary block">Elevating Success</span>
           </h1>

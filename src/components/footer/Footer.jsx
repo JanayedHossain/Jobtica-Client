@@ -1,7 +1,9 @@
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
+import useAuth from "../../hooks/useAuth";
 const Footer = () => {
+  const {user}=useAuth()
   return (
     <footer className="bg-gray-200 text-gray-800 ">
       <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,14 +52,21 @@ const Footer = () => {
                 Home
               </NavLink>
             </li>
+            {user && (
+              <li>
+                <NavLink to="/dashboard" className="hover:underline">
+                  Dashboard
+                </NavLink>
+              </li>
+            )}
             <li>
-              <NavLink to="/dashboard" className="hover:underline">
-                Dashboard
+              <NavLink to="/contact-us" className="hover:underline">
+                About Us
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact-us" className="hover:underline">
-                Contact Us
+                Contact
               </NavLink>
             </li>
           </ul>

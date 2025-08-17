@@ -46,9 +46,9 @@ const Testimonial = () => {
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white p-8 rounded-lg shadow-lg relative w-[95%] mx-auto">
-                <FaQuoteLeft className="text-4xl text-primary absolute top-4 left-4 opacity-20" />
-                <p className="text-gray-700 mb-6 italic">"{item.message}"</p>
+              <div className=" p-8 rounded-lg shadow-lg relative w-[95%] mx-auto">
+                <FaQuoteLeft className="text-4xl text-primary absolute top-4 left-4 opacity-40" />
+                <p className="text-gray-500 mb-6 italic">"{item.message}"</p>
                 <img
                   src={item.image}
                   alt={item.name}

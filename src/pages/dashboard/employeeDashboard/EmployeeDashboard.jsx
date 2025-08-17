@@ -76,7 +76,7 @@ const EmployeeOverview = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-black">
         <div className="bg-blue-100 p-4 rounded-xl shadow flex items-center gap-4">
           <FaClipboardList className="text-3xl text-blue-600" />
           <div>

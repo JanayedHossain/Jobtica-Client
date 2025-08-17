@@ -48,7 +48,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="cursor-pointer btn btn-ghost p-0 px-2 pr-5 lg:hidden"
+              className="cursor-pointer text-black hover:text-secondary btn btn-ghost p-0 px-2 pr-5 lg:hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-base">{navItems}</ul>
+          <ul className="menu menu-horizontal px-1 text-black">{navItems}</ul>
         </div>
         {user?.email ? (
           <div className="navbar-end relative">
@@ -90,7 +90,7 @@ const Navbar = () => {
             />
             {active && (
               <div className="absolute flex items-center justify-center flex-col gap-3 bg-white border border-gray-200 shadow-sm rounded-2xl top-[100%] right-8 p-6">
-                <h1>{user?.displayName}</h1>
+                <h1 className="text-black">{user?.displayName}</h1>
                 <button
                   className="btn btn-primary btn-sm sm:btn-md"
                   onClick={handleLogOut}
