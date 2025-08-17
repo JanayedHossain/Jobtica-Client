@@ -19,6 +19,7 @@ import PaymentHistory from "../pages/dashboard/employeeDashboard/PaymentHistory"
 import NotFound from "../pages/notfound/NotFound";
 import ContactUs from "../pages/contact/ContactUs";
 import Messages from "../pages/dashboard/adminDashboard/Messages";
+import AboutUs from "../pages/about-us/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "contact-us",
         Component: ContactUs,
+      },
+      {
+        path: "about-us",
+        Component: AboutUs,
       },
     ],
   },
