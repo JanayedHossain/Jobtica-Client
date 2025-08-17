@@ -60,8 +60,8 @@ const Footer = () => {
               </li>
             )}
             <li>
-              <NavLink to="/contact-us" className="hover:underline">
-                About Us
+              <NavLink to="/all-features" className="hover:underline">
+                All Features
               </NavLink>
             </li>
             <li>
