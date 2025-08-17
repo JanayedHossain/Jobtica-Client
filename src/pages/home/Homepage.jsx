@@ -3,6 +3,7 @@ import CompanyMilestones from "../../components/companyMilestones/CompanyMilesto
 import Faq from "../../components/faq/Faq";
 import HowItWorks from "../../components/howitworks/HowItWorks";
 import Newsletter from "../../components/newsletter/Newsletter";
+import ProductCard from "../../components/product-card/ProductCard";
 import Services from "../../components/services/Services";
 import Testimonial from "../../components/testimonial/Testimonial";
 
@@ -10,7 +11,8 @@ const Homepage = () => {
   return (
     <div>
       <Banner />
-      <HowItWorks/>
+      <HowItWorks />
+      <ProductCard />
       <Services />
       <Testimonial />
       <CompanyMilestones />
