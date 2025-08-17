@@ -5,6 +5,15 @@
   default: true;
   --color-primary: #800080;
 }
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: true;
+    --color-primary: #800080;
+    --color-secondary: #f2f4f6;
+    --color-base-200:black
+  }
+
+
 nav a.active,
 aside a.active {
   color: #800080;

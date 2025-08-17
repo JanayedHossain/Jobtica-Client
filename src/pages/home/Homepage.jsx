@@ -1,23 +1,23 @@
-import Banner from "../../components/banner/banner"
-import CompanyMilestones from "../../components/companyMilestones/CompanyMilestones"
-import Faq from "../../components/faq/Faq"
-import Newsletter from "../../components/newsletter/Newsletter"
-import Services from "../../components/services/Services"
-import Testimonial from "../../components/testimonial/Testimonial"
-
+import Banner from "../../components/banner/banner";
+import CompanyMilestones from "../../components/companyMilestones/CompanyMilestones";
+import Faq from "../../components/faq/Faq";
+import HowItWorks from "../../components/howitworks/HowItWorks";
+import Newsletter from "../../components/newsletter/Newsletter";
+import Services from "../../components/services/Services";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 const Homepage = () => {
   return (
     <div>
       <Banner />
+      <HowItWorks/>
       <Services />
       <Testimonial />
       <CompanyMilestones />
-<Newsletter/>
-      <Faq/>
+      <Newsletter />
+      <Faq />
     </div>
+  );
+};
 
-  )
-}
-
-export default Homepage
+export default Homepage;
